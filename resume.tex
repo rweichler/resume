@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.475in}
+\addtolength{\evensidemargin}{-0.475in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2.5pt}}
+  }
+}
+
+
+\newcommand{\resumeItemAIDS}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-6.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://r333d.com/}{\Large Reed Weichler}} \href{mailto:rweichler@gmail.com}{rweichler@gmail.com} \\
+  \href{https://r333d.com}{r333d.com} 
+  \href{https://github.com/rweichler}{github.com/rweichler} 
+  \href{https://twitter.com/rweichler}{twitter.com/rweichler}
+\end{tabular*}
+  
+%-----------SKILLS-----------------
+\section{Skills}
+    \resumeItemListStart
+        \resumeItemAIDS{Languages}
+            {C/C++, Lua/LuaJIT, Objective-C, Swift, JavaScript, Python, Go}
+        \resumeItemAIDS{Tools / Software}
+            {OpenResty (nginx "distribution"), Postgres, SQLite, FFIs, Redis, OpenGL, FreeBSD, Git, Vim, Xcode, devKitARM (Nintendo 3DS toolchain)}
+        \resumeItemAIDS{iOS}
+            {Core Audio, app development, build automation, Objective-C / LuaJIT interop, Realm, SQLite, reverse engineering (IDA, cycript), MobileSubstrate (jailbreak only), Objective-C runtime, inter-process communication (jailbreak only), RxSwift}
+    \resumeItemListEnd
+
+
+%-----------WORK EXPERIENCE-----------------
+\section{Experience}
+ 
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Superhuman}{San Francisco, California}
+      {Software Engineer}{May 2018 - Aug 2019}
+      \resumeItemListStart
+        \item\small{
+        Email client with much of the heavy lifting done on the client-side. Lot of hype in Silicon Valley. Users included (at one point or another) Steve Huffman (Reddit), Michael Lopp (Apple/Slack), Nat Friedman (Github).
+        
+        It was a small startup. 6 engineers (including me) + 2 engineering managers when I joined. I worked with a team of 4 on the iOS app (Swift, Objective-C, C++, JavaScript). I also occasionally contributed to the web frontend (Electron / React) and the backend (Go / Postgres / Redis / GCP).
+        
+        On the iOS side I fixed many crashes/bugs that affected thousands of paying users, added UI/UX improvements to make navigating the app easier and more pleasant, automated the build system to tag the git repo for easier debugging, reduced a significant amount of tech debt, and more.}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Cydia}{}
+      {Indie iOS Developer}{Feb 2014 - May 2018}
+      \resumeItemListStart
+        \item\small{
+        I made EQE (EqualizerEverywhere) and Cylinder. See "Cydia Products" section for more details. Search Google for something like "cylinder jailbreak". When jailbreaking was at its peak I had about 2M active users.
+        
+        I also contributed the developer community such as writing documentation on \href{https://iphonedevwiki.net}{iphonedevwiki.net}, doing research (APT/dpkg clients, Lua/Objective-C interop, SpringBoard alternatives), and helping out on IRC/Discord.
+
+        If I were to estimate, in total, my products are used by about 20\% of active jailbreak users. See install counts here: \href{Main products: EQE, EqualizerEverywhere, Cylinder. Search Google for something like "cylinder jailbreak". All were written in a combo of Objective-C and Lua / LuaJIT, which required cross-language interop and a custom build system (no Xcode!), both of which I had to engineer from scratch.
+        http://apt.thebigboss.org/stats.php?dev=rweichler}{apt.thebigboss.org/stats.php?dev=rweichler}
+        }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Quixey}{Palo Alto, California}
+      {Software Engineer (Intern)}{Jan 2012 -- July 2012}
+      \resumeItemListStart
+        \item\small{
+        Helped build the Quixey Challenge (recruiting tool) using the Meteor framework (JavaScript). Made HTML templates for marketing emails.
+        }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Cydia Products}
+  \resumeSubHeadingListStart
+    \resumeSubItem{EQE / EqualizerEverywhere}{System-wide parametric equalizer, the only of its kind. It used to be a commercial product until Cydia Store shut down in December 2018. Now it's free. \\ More info: \href{https://eqe.fm/about}{eqe.fm/about} }
+    \resumeSubItem{Cylinder}{Animation "platform" that exposes a Lua API for cool icon animations when swiping the home screen. Review: \href{https://youtube.com/watch?v=Y-Pk-XDVj-o}{youtube.com/watch?v=Y-Pk-XDVj-o} \\
+    Source: \href{https://github.com/rweichler/cylinder}{github.com/rweichler/cylinder}
+    
+    }
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Other Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Lucy}
+      {Lua / Objective-C bridge and runtime analysis/debugging tool for iOS. \href{https://github.com/rweichler/lucy}{https://github.com/rweichler/lucy}}
+    \resumeSubItem{jjjj}
+      {GUI package manager for iOS (based on dpkg, similar to Cydia).  \href{https://github.com/rweichler/jjjj}{https://github.com/rweichler/jjjj}}
+    \resumeSubItem{Aite}
+      {Custom build system used to develop software for Cydia. \href{https://github.com/rweichler/aite}{https://github.com/rweichler/aite}}
+    \resumeSubItem{Sunnyveil}
+      {3D game engine written in C and LuaJIT. Has Lua bindings to Bullet (physics engine) and OpenGL.}
+    \resumeSubItem{Wuigi}
+      {Mario clone (kind of like Mario Maker), written in Java. \href{https://github.com/rweichler/wuigi}{https://github.com/rweichler/wuigi}}
+    \resumeSubItem{Luna Roja}
+      {Edit of mGBA, giving online multiplayer to Pok\'emon Red.  \href{https://hax.iimarckus.org/topic/7112/}{https://hax.iimarckus.org/topic/7112/}}
+  \resumeSubHeadingListEnd
+
+  
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubItem
+      {Recurse Center}{Jan 2020 -- March 2020}
+    \resumeSubItem
+      {UC Davis}{Computer Science, Class of 2017}
+    \resumeSubItem
+      {Homestead High School}{Cupertino, California}
+  \resumeSubHeadingListEnd
+
+
+\end{document}
+
