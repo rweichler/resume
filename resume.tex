@@ -105,13 +105,7 @@
       {Cydia}{}
       {Indie iOS Developer}{Feb 2014 - May 2018}
       \resumeItemListStart
-        \item\small{
-        I made EQE (EqualizerEverywhere) and Cylinder. See "Cydia Products" section for more details. Search Google for something like "cylinder jailbreak". When jailbreaking was at its peak I had about 2M active users.
-        
-        I also contributed the developer community such as writing documentation on \href{https://iphonedevwiki.net}{iphonedevwiki.net}, doing research (APT/dpkg clients, Lua/Objective-C interop, SpringBoard alternatives), and helping out on IRC/Discord.
-
-        If I were to estimate, in total, my products are used by about 20\% of active jailbreak users. See install counts here: \href{Main products: EQE, EqualizerEverywhere, Cylinder. Search Google for something like "cylinder jailbreak". All were written in a combo of Objective-C and Lua / LuaJIT, which required cross-language interop and a custom build system (no Xcode!), both of which I had to engineer from scratch.
-        http://apt.thebigboss.org/stats.php?dev=rweichler}{apt.thebigboss.org/stats.php?dev=rweichler}
+        \item\small{See "Cydia Products" section for more details.
         }
       \resumeItemListEnd
 
@@ -129,11 +123,20 @@
 
 \section{Cydia Products}
   \resumeSubHeadingListStart
-    \resumeSubItem{EQE (released 2017) / EqualizerEverywhere (released 2014)}{EQE has two components. A system-wide parametric equalizer (the only of its kind) and a  \href{https://last.fm}{Last.FM}-like service that lets users create a profile, track their playback history, post on a message board, and keep a backup of their presets online. The iOS side required reverse engineering, audio DSP, app development, and low-level iOS systems engineering. Server-side, I used OpenResty (an nginx distribution) for the application, with Postgres for persistent storage and Redis as a message broker. It can handle about 10K requests per second on a cheap \$3.50 VPS. It used to be a commercial product until Cydia Store shut down in December 2018. Now it's free. About 8,000 weekly active users. More info: \href{https://eqe.fm/about}{eqe.fm/about} }
-    \resumeSubItem{Cylinder (released 2014)}{Animation "platform" that exposes a Lua API for cool icon animations when swiping on the home screen. Over 2.5 million total downloads and probably more than 100,000 active users (I have no metrics other than download counts/dates). \\ Review: \href{https://youtube.com/watch?v=Y-Pk-XDVj-o}{youtube.com/watch?v=Y-Pk-XDVj-o}
+    \resumeSubItem{EQE (released 2017) / EqualizerEverywhere (released 2014)}{EQE has two components. A system-wide parametric equalizer (the only of its kind) and a  \href{https://last.fm}{Last.FM}-like service that lets users create a profile, track their playback history, post on a message board, and keep a backup of their presets online. The iOS side required reverse engineering, audio DSP, app development, and low-level iOS systems engineering. Server-side, I used OpenResty (an nginx distribution) for the application, with Postgres for persistent storage and Redis as a message broker. It can handle about 10K requests per second on a cheap \$3.50 VPS. It used to be a commercial product until Cydia Store shut down in December 2018. About 8,000 weekly active users. More info: \href{https://eqe.fm/about}{eqe.fm/about} }
+    \resumeSubItem{Cylinder (released 2014)}{Animation "platform" that exposes a Lua API for cool icon animations when swiping on the home screen. Over 2.5 million total downloads and probably more than 100K active users. \\ Review: \href{https://youtube.com/watch?v=Y-Pk-XDVj-o}{youtube.com/watch?v=Y-Pk-XDVj-o}
     Source: \href{https://github.com/rweichler/cylinder}{github.com/rweichler/cylinder}
     
     }
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{Open Source Contributions}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Zebra}
+      {Initial R\&D and Localization support. \href{https://github.com/wstyres/zebra}{https://github.com/wstyres/zebra}}
+    \resumeSubItem{gmusicapi}
+      {Reduced network usage for certain types of tracks. \href{https://github.com/simon-weber/gmusicapi}{https://github.com/simon-weber/gmusicapi}}
   \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
@@ -141,6 +144,8 @@
   \resumeSubHeadingListStart
     \resumeSubItem{Meatpick}
       {Basic Calendly clone. \href{http://meatpick.com}{http://meatpick.com}}
+    \resumeSubItem{gbrc}
+      {Gameboy emulator, written from scratch in C. Runs Pokemon Red.}
     \resumeSubItem{Lucy}
       {Lua / Objective-C bridge and runtime analysis/debugging tool for iOS. \href{https://github.com/rweichler/lucy}{https://github.com/rweichler/lucy}}
     \resumeSubItem{jjjj}
