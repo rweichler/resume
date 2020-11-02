@@ -83,31 +83,26 @@
   \resumeSubHeadingListStart
   
     \resumeSubheading
-      {Superhuman}{San Francisco, California}
+      {Superhuman (funded by Andreessen Horowitz, First Round Capital)}{San Francisco, California}
       {Software Engineer}{May 2018 - Aug 2019}
       \resumeItemListStart
-        \item\small{
-        Email productivity startup. Notable users: Steve Huffman (Reddit), Michael Lopp (Apple), Nat Friedman (Github).
-        
-        It was a small company when I joined. 6 engineers (including me) + 2 engineering managers. I worked with a team of 4 on the iOS app (Swift, Objective-C, C++, JavaScript). I also occasionally contributed to the web frontend (Electron / React) and the backend (Go / Postgres / Redis / GCP).
-        
-        I fixed many crashes/bugs that affected thousands of paying users, added UI/UX improvements to make navigating the app easier and more pleasant, automated the build system to tag the git repo for easier debugging, reduced a significant amount of tech debt, and more.}
+        \item\small{Email client for Electron / iOS. Team of 4 (12-ish engineers total). Mostly worked on the iOS client (UIKit/Swift). Ocassionaly contributed to the Electron app (React).}
       \resumeItemListEnd
   
     \resumeSubheading
       {Cydia}{}
       {Software Vendor}{Feb 2014 - Dec 2018}
       \resumeItemListStart
-        \item\small{I sold software through Cydia Store, an app store for jailbroken iOS devices. See "Cydia Products" below.
+        \item\small{Sold software through Cydia Store, an app store for jailbroken iOS devices. See CYDIA PRODUCTS. Mostly solo, with occasional collaboration with community members and users.
         }
       \resumeItemListEnd
 
     \resumeSubheading
-      {Quixey}{Palo Alto, California}
+      {Quixey (funded by Alibaba, SoftBank, Goldman Sachs)}{Palo Alto, California}
       {Software Engineer (Intern)}{Jan 2012 -- July 2012}
       \resumeItemListStart
         \item\small{
-        Helped build the Quixey Challenge (recruiting tool) using the Meteor framework (JavaScript).
+        Quixey Challenge (recruiting tool). Team of 3. Used Meteor (JavaScript framework).
         }
       \resumeItemListEnd
 
@@ -116,10 +111,10 @@
 
 \section{Cydia Products}
   \resumeSubHeadingListStart
-    \resumeSubItem{EQE (released 2017) / EqualizerEverywhere (released 2014)}{About 8K weekly active users. \href{https://eqe.fm}{https://eqe.fm}\\EQE has two components. A system-wide parametric equalizer (the only of its kind on iOS) and a  \href{https://last.fm}{Last.FM}-like service that lets users create a profile, track their playback history, post on a message board, and keep a backup of their presets online. The iOS side required reverse engineering, audio DSP, app development, and low-level iOS systems engineering. Server-side, I used OpenResty (an nginx distribution) for the application, with Postgres for persistent storage and Redis as a message broker. It can handle about 2K requests per second on a cheap \$3.50 VPS.}
-    \resumeSubItem{Cylinder (released 2014)}{Over 2.5 million total downloads and probably more than 100K active users.\\Animation "platform" that exposes a Lua API for cool icon animations when swiping on the home screen.\\ Review: \href{https://youtube.com/watch?v=Y-Pk-XDVj-o}{youtube.com/watch?v=Y-Pk-XDVj-o}
-    Source: \href{https://github.com/rweichler/cylinder}{github.com/rweichler/cylinder}
+    \resumeSubItem{EQE (released 2017) / EqualizerEverywhere (released 2014)}{About 8K weekly active users. \href{https://eqe.fm}{https://eqe.fm}\\EQE has two components. A system-wide parametric equalizer (the only of its kind on iOS) and a  \href{https://last.fm}{Last.FM}-like service that lets users create a profile, track their playback history, post on a message board, and keep a backup of their presets online. The iOS side required reverse engineering, audio DSP, app development, and low-level iOS systems engineering. Server-side, I used OpenResty (an nginx distribution) for the application, with Postgres for persistent storage and Redis as a message broker. It can handle about 2K requests per second on a cheap \$3.50 VPS (FreeBSD).}
     
+    \resumeSubItem{Cylinder (released 2014)}{Exposes a subset of Core Animation APIs to a beginner friendly Lua-based platform for scripting icon animations on the home screen. Over 2.5 million total downloads and probably more than 50K active users currently.\\ Review: \href{https://youtube.com/watch?v=Y-Pk-XDVj-o}{youtube.com/watch?v=Y-Pk-XDVj-o}\\
+    Source: \href{https://github.com/rweichler/cylinder}{github.com/rweichler/cylinder}
     }
   \resumeSubHeadingListEnd
   
@@ -165,11 +160,11 @@
         \resumeSubItem{Languages}
             {C/C++, Lua/LuaJIT, Objective-C, Swift, JavaScript, Python, Go}
         \resumeSubItem{Tools / Software}
-            {SQLite, C FFIs, OpenGL, Git, Vim, devKitARM (Nintendo 3DS toolchain)}
+            {SQLite, C FFIs, dpkg/APT (Debian/Ubuntu package management), OpenGL, Git, Vim, devKitARM (Nintendo 3DS toolchain)}
         \resumeSubItem{Backend / Infra}
             {OpenResty (nginx "distribution"), Postgres, FreeBSD, Redis, dpkg (Debian)}
         \resumeSubItem{iOS}
-            {Core Audio, Xcode, build systems, Objective-C / LuaJIT interop, Realm, IDA, cycript, MobileSubstrate, Objective-C runtime, inter-process communication, ReactiveSwift}
+            {Core Audio, Core Animation, Xcode, build systems, Objective-C / LuaJIT interop, Realm, IDA, cycript, MobileSubstrate, Objective-C runtime, inter-process communication, ReactiveSwift}
   \resumeSubHeadingListEnd
 
 
