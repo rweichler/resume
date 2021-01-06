@@ -71,9 +71,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://r333d.com/}{\Large Reed Weichler}} \href{mailto:rweichler@gmail.com}{rweichler@gmail.com} |
-  \href{https://r333d.com}{r333d.com} |
-  \href{https://github.com/rweichler}{github.com/rweichler} |
+  \textbf{\href{http://r333d.com/}{\Large Reed Weichler}} \href{mailto:rweichler@gmail.com}{rweichler@gmail.com} \hspace{1em}
+  \href{https://r333d.com}{r333d.com} \hspace{1em}
+  \href{https://github.com/rweichler}{github.com/rweichler} \hspace{1em}
   \href{https://twitter.com/rweichler}{twitter.com/rweichler}
 \end{tabular*}
 
@@ -81,53 +81,62 @@
 \section{Experience}
  
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stream Report}{San Francisco / Remote}
+      {Software Engineer}{Oct 2020 - Now}
+      \resumeItemListStart
+        \item\small{Reverse engineered a social media iOS app and designed/maintained physical iPhone servers to mine data. Used LuaJIT, Objective-C, python3, Go, protobuf, grpc, PostgreSQL, IDA, OpenVPN, and various AWS solutions.}
+      \resumeItemListEnd
   
     \resumeSubheading
-      {Superhuman (funded by Andreessen Horowitz, First Round Capital)}{San Francisco, California}
+      {Recurse Center (n\'ee Hacker School)}{Brooklyn}
+      {---}{Jan 2020 - March 2020}
+      \resumeItemListStart
+        \item\small{Educational retreat for programmers. I made a Gameboy emulator, experimented with GNUstep, and made a PICO-8 game. Used C, Objective-C, LuaJIT, python3, Swift, and Rust.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Superhuman (funded by Andreessen Horowitz, First Round Capital)}{San Francisco}
       {Software Engineer}{May 2018 - Aug 2019}
       \resumeItemListStart
-        \item\small{Email client for Electron / iOS. Team of 4 (12-ish engineers total). Mostly worked on the iOS client (UIKit/Swift). Ocassionaly contributed to the Electron app (React).}
+        \item\small{Gmail client for Chrome / iOS. Used Swift, Objective-C, C++, Go, JavaScript, React.js, Realm, and PostgreSQL.}
       \resumeItemListEnd
   
     \resumeSubheading
-      {Cydia}{}
-      {Vendor}{Feb 2014 - Dec 2018}
+      {EQE}{Reno}
+      {Founder}{Jan 2017 - May 2018}
       \resumeItemListStart
-        \item\small{Sold software through Cydia Store, an app store for jailbroken iOS devices. See CYDIA PRODUCTS. Mostly solo, with occasional collaboration with community members and users.
+        \item\small{Solo founder. https://eqe.fm\\System-wide parametric equalizer and playback history tracker for iOS. Distributed through Cydia, an app store for jailbroken iOS devices. Successor to EqualizerEverywhere, a product I released in 2014. Used Objective-C, C, C++, LuaJIT, Core Audio, NGINX/OpenResty, SQLite, PostgreSQL, and Redis.
         }
       \resumeItemListEnd
 
     \resumeSubheading
-      {Quixey (funded by Alibaba, SoftBank, Goldman Sachs)}{Palo Alto, California}
-      {Software Engineer (Intern)}{Jan 2012 -- July 2012}
+      {Quixey (funded by Alibaba, SoftBank, Goldman Sachs)}{Palo Alto}
+      {Software Engineer Intern}{Jan 2012 -- July 2012}
       \resumeItemListStart
         \item\small{
-        Quixey Challenge (recruiting tool). Team of 3. Used Meteor (JavaScript framework).
+        Quixey Challenge (recruiting tool). Used Meteor (JavaScript framework).
         }
       \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
-
-
-\section{Cydia Products}
-  \resumeSubHeadingListStart
-    \resumeSubItem{EQE (released 2017) / EqualizerEverywhere (released 2014)}{About 8K weekly active users. \href{https://eqe.fm}{https://eqe.fm}\\EQE has two components. A system-wide parametric equalizer (the only of its kind on iOS) and a  \href{https://last.fm}{Last.FM}-like service that lets users create a profile, track their playback history, post on a message board, and keep a backup of their presets online. The iOS side required reverse engineering, audio DSP, app development, and low-level iOS systems engineering. Server-side, I used OpenResty (an nginx distribution) for the application, with Postgres for persistent storage and Redis as a message broker. It can handle about 2K requests per second on a cheap \$3.50 VPS (FreeBSD).}
-    
-    \resumeSubItem{Cylinder (released 2014)}{Exposes a subset of Core Animation APIs to a beginner friendly Lua-based platform for scripting icon animations on the home screen. Over 2.5 million total downloads and probably more than 50K active users currently.\\ Review: \href{https://youtube.com/watch?v=Y-Pk-XDVj-o}{youtube.com/watch?v=Y-Pk-XDVj-o}\\
-    Source: \href{https://github.com/rweichler/cylinder}{github.com/rweichler/cylinder}
-    }
   \resumeSubHeadingListEnd
   
 %-----------PROJECTS-----------------
-\section{Open Source Contributions}
+\section{iOS Jailbreak Projects/Products}
   Non-exhaustive.\vspace{-2pt}
   \resumeSubHeadingListStart
-    \resumeSubItem{Zebra}
-      {Initial R\&D and localization support. \href{https://github.com/wstyres/zebra}{https://github.com/wstyres/zebra}}
-    \resumeSubItem{Cylinder}
-      {Author / Maintainer. \href{https://github.com/rweichler/cylinde}{https://github.com/rweichler/cylinder}}
-    \resumeSubItem{gmusicapi}
-      {Reduced network usage for certain types of tracks. \href{https://github.com/simon-weber/gmusicapi}{https://github.com/simon-weber/gmusicapi}}
+    \resumeSubItem{EqualizerEverywhere (2014)}
+      {System-wide 10-band equalizer. Paid product. Predecessor to EQE (above).}
+    \resumeSubItem{Cylinder (2014)}
+      {Lua bindings to Core Animation for fun icon animations. \href{https://github.com/rweichler/cylinde}{https://github.com/rweichler/cylinder}}
+    \resumeSubItem{Zebra (2018)}
+      {Not my project, only a contributor. I did initial R\&D and localization support. \href{https://github.com/wstyres/zebra}{https://github.com/wstyres/zebra}}
+    \resumeSubItem{Lucy (2016)}
+      {Lua / Objective-C bridge and runtime analysis/debugging tool for iOS. \href{https://github.com/rweichler/lucy}{https://github.com/rweichler/lucy}}
+    \resumeSubItem{jjjj (2017)}
+      {GUI package manager for iOS (based on dpkg, similar to Cydia).  \href{https://github.com/rweichler/jjjj}{https://github.com/rweichler/jjjj}}
+    \resumeSubItem{Aite (2017-Now)}
+      {Custom build system. I use this a lot. \href{https://github.com/rweichler/aite}{https://github.com/rweichler/aite}}
       
   \resumeSubHeadingListEnd
 
@@ -135,36 +144,16 @@
 \section{Other Projects}
     Non-exhaustive.\vspace{-2pt}
   \resumeSubHeadingListStart
-    \resumeSubItem{Meatpick}
+    \resumeSubItem{Meatpick (2020)}
       {Basic Calendly clone. \href{http://meatpick.com}{http://meatpick.com}}
-    \resumeSubItem{gbrc}
+    \resumeSubItem{gbrc (2020)}
       {Gameboy emulator, written from scratch in C. Runs Pokemon Red.}
-    \resumeSubItem{Lucy}
-      {Lua / Objective-C bridge and runtime analysis/debugging tool for iOS. \href{https://github.com/rweichler/lucy}{https://github.com/rweichler/lucy}}
-    \resumeSubItem{jjjj}
-      {GUI package manager for iOS (based on dpkg, similar to Cydia).  \href{https://github.com/rweichler/jjjj}{https://github.com/rweichler/jjjj}}
-    \resumeSubItem{Aite}
-      {Custom build system used to develop software for Cydia. \href{https://github.com/rweichler/aite}{https://github.com/rweichler/aite}}
-    \resumeSubItem{Sunnyveil}
+    \resumeSubItem{Sunnyveil (2017)}
       {3D game engine written in C and LuaJIT. Has Lua bindings to Bullet (physics engine) and OpenGL.}
-    \resumeSubItem{Wuigi}
+    \resumeSubItem{Wuigi (2011)}
       {Mario clone (kind of like Mario Maker), written in Java. \href{https://github.com/rweichler/wuigi}{https://github.com/rweichler/wuigi}}
-    \resumeSubItem{Luna Roja}
-      {Edit of mGBA, giving online multiplayer to Pok\'emon Red.  \href{https://hax.iimarckus.org/topic/7112/}{https://hax.iimarckus.org/topic/7112/}}
-  \resumeSubHeadingListEnd
-
-  
-%-----------SKILLS-----------------
-\section{Skills}
-  \resumeSubHeadingListStart
-        \resumeSubItem{Languages}
-            {C/C++, Lua/LuaJIT, Objective-C, Swift, JavaScript, Python, Go}
-        \resumeSubItem{Tools / Software}
-            {SQLite, C FFIs, dpkg/APT (Debian/Ubuntu package management), OpenGL, Git, Vim, devKitARM (Nintendo 3DS toolchain)}
-        \resumeSubItem{Backend / Infra}
-            {OpenResty (nginx "distribution"), Postgres, FreeBSD, Redis, dpkg (Debian)}
-        \resumeSubItem{iOS}
-            {Core Audio, Core Animation, Xcode, build systems, Objective-C / LuaJIT interop, Realm, IDA, cycript, MobileSubstrate, Objective-C runtime, inter-process communication, ReactiveSwift}
+    \resumeSubItem{Luna Roja (2017)}
+      {Custom Gameboy emulator for the 3DS for a heavily modified version of Pok\'emon Red.  \href{https://hax.iimarckus.org/topic/7112/}{https://hax.iimarckus.org/topic/7112/}}
   \resumeSubHeadingListEnd
 
 
@@ -172,12 +161,15 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubItem
-      {Recurse Center}{Jan 2020 -- March 2020}
-    \resumeSubItem
-      {UC Davis}{Computer Science, Class of 2017}
+      {UC Davis}{Bachelor's in Computer Science, Class of 2017}
     \resumeSubItem
       {Homestead High School}{Cupertino, California}
   \resumeSubHeadingListEnd
+
+  
+%-----------SKILLS-----------------
+\section{Skills}
+  Technologies and languages I've used can be found in the "Experience" section.
 
 
 \end{document}
